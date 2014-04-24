@@ -5,6 +5,8 @@ description       "Helper definitions to configure SSL encryption for OpenStack 
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           IO.read(File.join(File.dirname(__FILE__), 'VERSION'))
 
+recipe            "openstack-ssl::default", "Dummy recipe entry point"
+
 %w{ centos ubuntu }.each do |os|
   supports os
 end
